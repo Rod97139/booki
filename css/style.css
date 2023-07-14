@@ -5,6 +5,8 @@
 
 body {
     margin-top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 :root {
@@ -178,7 +180,7 @@ header {
 .nav-link:hover {
     border-top: 3px solid var(--main-color);
     
-    color: #0065FC;
+    color: var(--main-color);
 }
 
 
@@ -221,7 +223,7 @@ input[type="checkbox"]:hover + label {
 #location {
     display: flex;
     flex-direction: row;
-    border: #F2F2F2 solid 1px; 
+    border: var(--main-bg-color) solid 1px; 
     border-radius: 15px;
     width: 100%;
     max-width: 300px;
@@ -264,7 +266,7 @@ button {
 }
 
 form .fa-location-dot {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     padding: 4.5%;
     padding-bottom: 1.2rem;
     color: black;
@@ -397,10 +399,6 @@ footer div {
         padding-right: 50px;
     }
 
-    button i {
-        
-    }
-
     header {
         flex-direction: column;
     }
@@ -492,7 +490,6 @@ footer div {
     }
 
     .populaires {
-        background-color: red;
         padding: 0;
     }
 
