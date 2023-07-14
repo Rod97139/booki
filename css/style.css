@@ -5,7 +5,6 @@
 
 body {
     margin-top: 0;
-    
 }
 
 :root {
@@ -69,6 +68,10 @@ body {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+}
+
+.hebergements-cards {
+    margin-right: 10px;
 }
 
 .hebergements-cards .card-content {
@@ -237,7 +240,7 @@ button {
     border: 0;
     background: var(--main-color);
     color: white;
-    padding: 4% 7% 4% 3%;
+    padding: 4% 7% 4% 0%;
     font-weight: bold;
     float: right;
 
@@ -389,10 +392,13 @@ footer div {
         
         border-radius: 15px;
         padding-bottom: 20px;
-        margin-left: 60px;
+        margin-left: 40px;
         padding-left: 15px;
-        
         padding-right: 50px;
+    }
+
+    button i {
+        
     }
 
     header {
