@@ -1,10 +1,11 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
 
 body {
-    margin-top: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -202,7 +203,7 @@ header {
 }
 
 input[type="checkbox"] + label {
-    border: var(--main-grey-color) solid 1px;
+    border: var(--main-grey-color) solid 2px;
     border-radius: 25px;
     padding: 5px 10px;  
     margin: 0 1rem 0 0;
@@ -219,10 +220,26 @@ input[type="checkbox"]:hover + label {
     margin: 0.5rem 0.5rem;
 }
 
+.info-container {
+    display: flex;
+}
+
+.info {
+    border: var(--main-grey-color) solid 1px;
+    padding: 3px 9px 5px 9px;
+    position: relative;
+    font-size: 0.7rem;
+    margin: auto 0;
+    flex-shrink: 0;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
 /****** location ***********/
 #location {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border: var(--main-bg-color) solid 1px; 
     border-radius: 15px;
     width: 100%;
@@ -238,31 +255,35 @@ input[type="checkbox"]:hover + label {
     font-weight: bold;
     text-align: center;
 }
-button {
+#location button {
+    display: flex;
+    justify-content: center;
     border: 0;
     background: var(--main-color);
     color: white;
-    padding: 4% 7% 4% 0%;
     font-weight: bold;
-    float: right;
-
 }
+
 #btn1{
     border: 0;
     background: var(--main-color);
     color: white;
-    padding: 4.5% 7% 4.5% 3%;
-    margin-left: 10px;
+    margin: auto;
     float:right;
     font-weight: bold;
 }
 #btn2 {
     float:right;
     text-align: center;
-    position: absolute;
     color: white;
+    margin: auto;
     display: none;
-    /* margin-left: 20px; */
+    padding: 13px 30px;
+}
+
+.search-container {
+    
+    margin: 0 8px;
 }
 
 form .fa-location-dot {
@@ -273,12 +294,7 @@ form .fa-location-dot {
     
 }
 
-.fa-info {
-    border: var(--main-grey-color) solid 1px;
-    border-radius: 50%;
-    padding: 5px 10px;
-    margin-right: 1rem;
-}
+
 
 /****** Activité ***********/
 
@@ -391,12 +407,8 @@ footer div {
 @media (max-width: 767.98px) {
 
     button {
-        
         border-radius: 15px;
-        padding-bottom: 20px;
-        margin-left: 40px;
-        padding-left: 15px;
-        padding-right: 50px;
+        width: 50px;
     }
 
     header {
@@ -432,10 +444,20 @@ footer div {
 
     .hebergements-cards {
         flex-direction: column;
+        margin-right: 22px;
     }
 
     .hebergements-cards .card {
         width: 100%;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .hebergements {
+        margin: 0 8px;
     }
 
     .hebergements-and-populaires .hebergements {
@@ -483,11 +505,6 @@ footer div {
     #filters label {
         width: 150px;
     }
-    
-    .hebergements-and-populaires {
-        flex-direction: column-reverse;
-        justify-content: space-between;
-    }
 
     .populaires {
         padding: 0;
@@ -503,4 +520,11 @@ footer div {
         width: 100%;
     }
 
+    .main-container {
+        padding: 0;
+    }
+
+    #location {
+        margin: 2rem auto;
+    }
 }
