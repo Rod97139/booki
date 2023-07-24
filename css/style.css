@@ -401,6 +401,7 @@ footer div {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 }
 
 /* Small devices (phones, less than 768px) */
@@ -527,4 +528,19 @@ footer div {
     #location {
         margin: 2rem auto;
     }
+
+    .filters-container {
+        max-width: 400px;
+    }
+
+    #filters div {
+        margin-inline: auto;
+    }
+
+    input[type="checkbox"] + label {
+        margin: 0 0.2rem 0 0;
+        max-width: 108px;
+        font-size: 0.8rem;
+    }
+
 }
